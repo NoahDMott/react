@@ -2,23 +2,22 @@ import React from "react";
 
 //include images into your bundle
 import rigoImage from "../../img/rigo-baby.jpg";
-
+import {} from "bootstrap";
 //create your first component
 const Home = () => {
 	return (
 		<div>
-			<h1 className="text-center mt-5">Hello Rigo!</h1>
-			<p>
-				<img src={rigoImage} />
-			</p>
-			<a href="#" className="btn btn-success">
-				If you see this green button... bootstrap is working...
-			</a>
-			<p>
-				Made by{" "}
-				<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
-				love!
-			</p>
+			<Card style={{ width: "18rem" }}>
+				<Card.Img variant="top" src="holder.js/100px180" />
+				<Card.Body>
+					<Card.Title>Card Title</Card.Title>
+					<Card.Text>
+						Some quick example text to build on the card title and
+						make up the bulk of the card's content.
+					</Card.Text>
+					<Button variant="primary">Go somewhere</Button>
+				</Card.Body>
+			</Card>
 		</div>
 	);
 };
